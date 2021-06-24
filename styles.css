@@ -1,0 +1,515 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+html { 
+   font-size: 62.5%;
+   font-family: 'Karla', sans-serif;
+}
+body{ 
+   color: rgb(0, 0, 0);
+   display: block;
+}
+
+ul,
+ol { 
+   margin: 0;
+   padding: 0;
+   list-style-type: none;   
+}
+
+a { 
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-size: 3em;
+}
+
+img { 
+   width: 100%;
+   max-width: 100%;
+}
+
+
+.wrapper{ 
+   max-width:1300px; ;
+   width: 90%;
+   margin: 0 auto;
+}
+
+
+/* Header */
+header { 
+   width: 100%;
+}
+/* Header Text */
+.headerText {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 60vh;
+}
+
+.container { 
+   position: relative;
+}
+
+/* Nav */
+
+.navMenu{ 
+   display: flex;
+   width: 100%;
+   flex-wrap: nowrap;
+   justify-content: end;
+   line-height: 35px;
+   letter-spacing: 1.9px;
+}
+
+.greyNav, 
+.blueNav { 
+   display: inline-block;
+   margin-right: 3em;
+}
+.navMenu a { 
+   font-family: 'Roboto', sans-serif;
+   font-size: 2em;
+   padding: 10px;
+}
+.blueNav{ 
+   background-color:rgba(118, 118, 215, 0.598);
+   border-color: black;
+   border-radius: 30px;
+   height: 3.6em;
+}
+
+/* Hover States */
+.greyNav a:hover,
+.greyNav a:focus {
+   color: white;
+   background-color:rgba(0, 0, 0, 0.427);
+   border-color: black;
+   border-radius: 30px;
+   
+
+}
+.blueNav a:hover,
+.blueNav a:focus  { 
+   color: white;
+   background-color:rgba(4, 4, 198, 0.81);
+   border-color: black;
+   border-radius: 30px;
+   
+}
+
+
+/* Header Text */
+.centeringDiv{ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   padding-left: 65px;
+   width: 45%;
+   height: 30vh;
+}
+
+h1, h2 {
+   position: relative;
+   font-family: 'Karla', sans-serif;
+   justify-content:center ;
+   
+}
+
+h1 { 
+   font-size: 5em;
+   letter-spacing: 2px;
+   font-weight: 700;
+   text-align: left;
+   width: 65%;
+   border-bottom: 1px solid black;
+   margin-top: 3.5em;
+
+}
+
+.headerH2 { 
+
+   font-size: 2em;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: 2.5px;
+   width:70%;
+}
+
+.headerImg { 
+   max-width: 100%;
+   position: absolute;
+}
+
+
+/* Buttons */
+.buttonsDiv {
+   display: flex;
+   width: 100%;
+}
+
+.buttons { 
+   display: flex;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+}
+
+.buttons ol { 
+   border: 2px black solid;
+}
+
+.buttons li { 
+   padding: 10px;
+   margin: 20px;
+   font-size: 1em;
+   font-weight: 400;
+   border-radius: 5px;
+   background-color: rgba(0, 0, 0, 0.392);
+}
+
+.buttons a { 
+   color: white;
+}
+
+.buttons li:hover,
+.buttons li:focus {
+   background-color:rgba(0, 0, 0, 0.584);
+   border-color: black;
+   border-radius: 9px;
+
+}
+
+/* Three Divs */
+
+/* .threeDivsContainer { 
+   display: flex;
+   height: 35vh;
+   text-align: center;
+   width: 95%;
+   margin-left: 3em;
+   margin-bottom: 55em;
+} */
+
+
+/* .threeDivs { 
+   flex-wrap: wrap;
+   text-align: left;
+   width: 33%;
+   margin: 44px 27px 0px 100px;
+   border-right: 2px dotted grey;
+}
+
+
+.threeDivs h3{ 
+   font-size: 2.3em;
+   letter-spacing: .2em;
+   width: 100%;
+   margin-bottom: 2em;
+}
+
+.threeDivs p {
+   width: 100%;
+   padding-right: 10%;
+   font-weight: 400;
+   font-size: 1.7em;
+   line-height: 1.8em;
+} */
+
+
+/* design orientated  */
+
+.designOrientated { 
+   margin: 10%;
+   font-weight: 400;
+   text-align: center;
+   width: 80%;
+}
+.blurbSection { 
+   margin-top: 30em;
+}
+
+.designOrientated h2 {
+   font-weight: 700;
+   font-size: 3.4em;
+   text-align: center;
+   margin-left: 1em;
+   padding-top: 2em;
+}
+
+.designOrientated p{ 
+   font-size: 1.9em;
+   width: 90%;
+   text-align: center;
+   margin-left: 3em;
+   margin-bottom: 3em;
+}
+
+.createImg { 
+   width: 65%;
+   border: 1px solid black;
+   margin-bottom: .2em;
+}
+
+/* Services */
+
+.servicesSec{ 
+   color: rgba(0, 0, 0, 0.968);
+   height: 100vh;
+   margin-bottom: 1em;
+   background-color:rgba(224, 221, 221, 0.05);
+}
+
+.servicesTitle {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-weight: 00;
+   text-align: center;
+   height: 45vh;
+
+}
+
+.servicesTitle h2 { 
+   font-weight: 700;
+   font-size: 4em;
+   text-align: center;
+   padding: .3em;
+}
+.servicesTitle p { 
+   font-size: 2.2em;
+}
+
+.services { 
+   display: flex;
+   height: 55vh;
+   color: rgba(0, 0, 0, 0.968);
+}
+
+.servicesDiv { 
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-right: 3em;
+}
+.services h4 { 
+   font-size: 2.5em;
+   width: 100%;
+   text-align: center;
+   
+}
+.services p { 
+   font-size: 1.7em;
+   /* margin: 15px; */
+   padding: 30px;
+   width: 95%;
+   height: 50%;
+   text-align: center;
+   border-right: 2px dotted grey;
+}
+
+
+/* Recent Works */
+.recentSec { 
+   max-width: 100%;
+}
+
+.recentText { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   height: 40vh;
+   width:100%;
+   text-align: center;
+   color: rgba(0, 0, 0, 0.968);
+   border-top: 100px solid rgba(0, 0, 0, 0.04);
+   margin-top: 5em;
+
+}
+
+.recentH4 { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 4em;
+   text-align:center;
+   width: 100%;
+
+}
+
+.recentText p{
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width:100%;
+   text-align: center;
+   font-size: 2em;
+}
+
+.recentDiv1 { 
+   display: flex;
+   position: relative;
+   height: 500px;
+   width: 97%;
+   margin:1em 0 4em 2em;
+}
+
+.recentDiv2{ 
+   display: flex;
+   position: relative;
+   justify-content: end;
+   height: 550px;
+   width: 97%;
+   background-color: rgba(0, 0, 0, 0.02);
+   margin-bottom:3em;
+
+}
+
+.recentLinks { 
+   text-align: center;
+   padding:20px;
+   border: 2px solid rgba(0, 0, 0, 0.536);
+
+}
+
+.recentLinks a { 
+   font-weight: 700;
+   margin-bottom: 1px solid grey;
+}
+
+.logoBranding { 
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.logoBranding img { 
+   width: 55%;
+   border: 1px solid black;
+}
+
+.recentImg { 
+   flex-wrap: wrap;
+   height: 400px;
+   width: 100%;
+   max-width: 100%;
+   margin-top: 2em;
+}
+
+.projectText { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 50%;
+   padding: 3em;
+}
+
+.projectText h4 {
+   font-family: 'Karla', sans-serif;
+   font-weight: 700;
+   font-size: 1.7em;
+}
+
+.projectText p { 
+   font-family: 'Karla', sans-serif;
+   font-weight: 400;
+   font-size: 1.5em;
+   letter-spacing: .1em;
+   line-height: 1.5em;
+}
+
+.fontAwesome{ 
+   width: 100%;
+   height: 150px;
+   position: relative;
+   line-height: 15px;
+   letter-spacing: 1.4px;
+}
+
+.fontAwesome ul { 
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   justify-content: start;
+}
+.fontAwesome li  { 
+   margin:20px;
+}
+.fontAwesome p { 
+   font-size: 12.5px;
+   text-align: center;
+}
+
+
+/* .pencilDiv{
+   display: flex;
+   width: 100%;
+   
+}
+
+.pencilImg { 
+   justify-content: center;
+   width: 25%;
+   height: auto;
+} */
+
+/* Footer */
+
+footer { 
+   display: flex;
+   justify-content: start;
+   margin-top: 2em;
+   height: 30vh;
+   text-align: left;
+   padding-left: 2.5em;
+   background-color:rgba(7, 7, 7, 0.071);
+}
+
+.footerMenu { 
+   margin-top: 3em;
+   margin-bottom: 2em;
+   font-size: .7em;
+   line-height: 35px;
+   letter-spacing: 1.9px;
+}
+
+
+/* About Page */
+
+
+.vaseDiv { 
+   display: flex;
+   position: absolute;
+   justify-content: center;
+   width: 100%;
+   top: 0;
+}
+
+.vaseImg { 
+   width: 100%;
+}
+
+.pencilDiv { 
+   display: flex;
+   position: relative;
+   justify-content: center;
+   width: 100%;
+   margin-top: 3em;
+}
+
+.pencilImg { 
+   width: 20%;
+   border: 1px solid black;
+}

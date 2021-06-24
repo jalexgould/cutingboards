@@ -1,0 +1,150 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+
+html { 
+   font-size: 62.5%;
+   font-family: 'Karla', sans-serif;
+}
+body{ 
+   font-family: sans-serif;
+   font-size: 13px;
+   color: rgb(0, 0, 0);
+   display: block;
+}
+nav { 
+   background: rgba(102, 70, 53, 0.548);
+   padding: 0 5px;
+}
+a { 
+   color: white;
+   text-decoration:none ;
+}
+
+ul,
+li { 
+   margin: 0;
+   padding: 0;
+   list-style-type: none;   
+}
+
+a { 
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-size: 2em;
+}
+
+img { 
+   width: 100%;
+   max-width: 100%;
+}
+
+
+.wrapper{ 
+   max-width:1300px; ;
+   width: 90%;
+   margin: 0 auto;
+}
+
+/* Header Text */
+
+.headerTextDiv { 
+   position: relative;   
+   margin-bottom: 2em;
+}
+
+/* Header Image */
+.headerImg { 
+   position: relative;
+   height: 15em;
+}
+
+/* Navigation  */
+.menu { 
+   display: flex;
+   width: 100%;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   line-height: 35px;
+   letter-spacing: 1.9px;
+}
+
+.menu,
+.submenu { 
+   list-style-type: none;
+}
+.logo {
+   font-size: 8px;
+}
+.contact { 
+   font-size: 9px;
+}
+
+.item,
+.has-submenu {
+   padding: 1px 2px;
+   font-size: 12px;
+}
+.item.button { 
+   padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+   color: rgb(228, 228, 228);
+}
+
+.pushCart { 
+   margin-left: auto;
+}
+
+
+/* Top Three Section */
+
+.topThreeSection { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-top: 2em;
+}
+
+.topThreeDiv { 
+   display: flex;
+   flex-wrap: wrap;
+   width: 75%;
+   position: relative;
+   align-items: center;
+   color: rgb(253, 253, 253);
+   margin: 3em 0;
+   padding-left: 7em;
+   
+}
+
+.bodyImg{ 
+   margin-left: 4.5em;
+   position: absolute;
+}
+
+h3,
+h4 { 
+   font-size: 5em;
+   margin-bottom: 1em;
+}
+
+.topThreeP { 
+   font-size: 2.5em;
+   color:rgb(250, 250, 250);;
+}
+
+.topThreeImg { 
+   position: relative;
+   margin-top: 5em;
+}
